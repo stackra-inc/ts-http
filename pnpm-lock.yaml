@@ -32,13 +32,13 @@ importers:
     devDependencies:
       '@stackra/eslint-config':
         specifier: ^1.0.6
-        version: 1.0.6(@babel/core@7.29.0)(eslint@9.28.0(jiti@2.6.1))(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))(typescript@6.0.3)
+        version: 1.0.7(@babel/core@7.29.0)(eslint@9.28.0(jiti@2.6.1))(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))(typescript@6.0.3)
       '@stackra/prettier-config':
         specifier: ^1.0.4
-        version: 1.0.4(prettier@3.8.3)(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))
+        version: 1.0.5(prettier@3.8.3)(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))
       '@stackra/tsup-config':
         specifier: ^1.0.4
-        version: 1.0.4(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))
+        version: 1.0.6(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))
       '@stackra/typescript-config':
         specifier: ^1.0.5
         version: 1.0.5(typescript@6.0.3)
@@ -778,15 +778,15 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@stackra/eslint-config@1.0.6':
-    resolution: {integrity: sha512-imHujEJTsev4Wncc/lcAH6HTcXKnn1+/LwFpnrWuOde+6WQGYoWG1zu/j3w78MGjaSCX1AG+ztFdIFCgSih4sA==}
+  '@stackra/eslint-config@1.0.7':
+    resolution: {integrity: sha512-DA90JjsLQCdQZDTv5AOK4QKObJXUg9pzWqNGLPg6rwDDwsmYjSzREYcMP/D8qKBL1i0X8wScAPCf5QDYfM5J9g==}
     engines: {node: '>=20', pnpm: '>=9.0.0'}
     peerDependencies:
       eslint: '>=9.0.0'
-      typescript: '>=5.0.0'
+      typescript: '>=5.0.0 || >=6.0.0'
 
-  '@stackra/prettier-config@1.0.4':
-    resolution: {integrity: sha512-lv3oFCdn8de7xZjxMDKLZdKAVXYKrypu9wOcl9Xd2Qp8eSdtj8fwU98iO4EehrNGP7n7VLXfzNsdKHMzXoxykg==}
+  '@stackra/prettier-config@1.0.5':
+    resolution: {integrity: sha512-UxLVl7sd8R3Zh856AbB+PSBoUBD6CJM+jQetLwpXkcKv82Kfh22B0aCVX3IMBFNrFn/oP12Hm32bSVZNWEOX9w==}
     engines: {node: '>=20', pnpm: '>=9.0.0'}
     peerDependencies:
       prettier: '>=3.0.0'
@@ -809,8 +809,8 @@ packages:
       '@stackra/ts-container':
         optional: true
 
-  '@stackra/tsup-config@1.0.4':
-    resolution: {integrity: sha512-qViGYn1+/sISN8R5yth93aDoeoXSaLVuDKF2FFVstSyWoTwSwabhwp3ghJjtLkvB4sbNNgySumPRKaUMA3rGag==}
+  '@stackra/tsup-config@1.0.6':
+    resolution: {integrity: sha512-R0bSuwXyTvV1imeohLpTfcpTQfqe3nO4nCJduN+tAvicpRUW3ETh8ddpHSDwXEfCpjL1k57PByK1JLYZl8Y1Mg==}
     engines: {node: '>=20', pnpm: '>=9.0.0'}
     peerDependencies:
       tsup: '>=8.0.0'
@@ -2595,7 +2595,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.60.2':
     optional: true
 
-  '@stackra/eslint-config@1.0.6(@babel/core@7.29.0)(eslint@9.28.0(jiti@2.6.1))(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))(typescript@6.0.3)':
+  '@stackra/eslint-config@1.0.7(@babel/core@7.29.0)(eslint@9.28.0(jiti@2.6.1))(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))(typescript@6.0.3)':
     dependencies:
       '@babel/preset-typescript': 7.28.5(@babel/core@7.29.0)
       '@nesvel/tsup-config': 1.0.3(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))
@@ -2606,7 +2606,7 @@ snapshots:
       - supports-color
       - tsup
 
-  '@stackra/prettier-config@1.0.4(prettier@3.8.3)(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))':
+  '@stackra/prettier-config@1.0.5(prettier@3.8.3)(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))':
     dependencies:
       '@nesvel/tsup-config': 1.0.3(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))
       prettier: 3.8.3
@@ -2626,7 +2626,7 @@ snapshots:
     optionalDependencies:
       '@stackra/ts-container': 2.0.10(react@19.2.5)
 
-  '@stackra/tsup-config@1.0.4(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))':
+  '@stackra/tsup-config@1.0.6(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))':
     dependencies:
       tsup: 8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3)
 
