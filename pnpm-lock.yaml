@@ -30,18 +30,18 @@ importers:
         specifier: ^2.8.1
         version: 2.8.1
     devDependencies:
-      '@stackra/eslint-config':
+      '@nesvel/eslint-config':
         specifier: ^1.0.5
         version: 1.0.5(@babel/core@7.29.0)(eslint@9.28.0(jiti@2.6.1))(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))(typescript@6.0.3)
-      '@stackra/prettier-config':
+      '@nesvel/prettier-config':
         specifier: ^1.0.3
         version: 1.0.3(prettier@3.8.3)(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))
-      '@stackra/tsup-config':
+      '@nesvel/tsup-config':
         specifier: ^1.0.3
         version: 1.0.3(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))
       '@stackra/typescript-config':
-        specifier: ^1.0.4
-        version: 1.0.4(typescript@6.0.3)
+        specifier: ^1.0.5
+        version: 1.0.5(typescript@6.0.3)
       '@types/node':
         specifier: ^25.6.0
         version: 25.6.0
@@ -64,7 +64,7 @@ importers:
         specifier: ^2.6.1
         version: 2.6.1
       jsdom:
-        specifier: ^29.0.2
+        specifier: ^29.1.0
         version: 29.1.0
       prettier:
         specifier: ^3.8.3
@@ -530,30 +530,24 @@ packages:
       '@emnapi/core': ^1.7.1
       '@emnapi/runtime': ^1.7.1
 
-  '@stackra/eslint-config@1.0.5':
+  '@nesvel/eslint-config@1.0.5':
     resolution: {integrity: sha512-Te32x68hjpIFSumaAfqu2UIk07LMjU809C0tbGcchyd0EuGc1SfEQrZ5tSuOPD//0XGiOxv1vnkeOp81VeBMPw==}
     engines: {node: '>=20', npm: '>=10'}
     peerDependencies:
       eslint: '>=9.0.0'
       typescript: '>=5.0.0'
 
-  '@stackra/prettier-config@1.0.3':
+  '@nesvel/prettier-config@1.0.3':
     resolution: {integrity: sha512-qMyywC5yDeKctmTw5W/jgyAoaPVl7CyuUQOIb6xl2apuLDPpD3C2FwwEt328axpF0qFlD0Z09QMHj9JHqQzfvA==}
     engines: {node: '>=20', npm: '>=10'}
     peerDependencies:
       prettier: '>=3.0.0'
 
-  '@stackra/tsup-config@1.0.3':
+  '@nesvel/tsup-config@1.0.3':
     resolution: {integrity: sha512-e1+4VREER/saszislU/uvVU+Kzjqa5SZU3C/P9bPah9DrHr32clDdxKDWO73TRY89lXSanU0nsH/4+MsnpeWVg==}
     engines: {node: '>=20', npm: '>=10'}
     peerDependencies:
       tsup: '>=8.0.0'
-
-  '@stackra/typescript-config@1.0.4':
-    resolution: {integrity: sha512-vWkpddwAty8J3NfiXHzhVbcsYenDKl+bNq3hdj4Ckr5sgjHEvM7pwnlyJ3ZXlKbKHMS/jLUXmuFjumvaG/Np8w==}
-    engines: {node: '>=20', npm: '>=10'}
-    peerDependencies:
-      typescript: '>=5.0.0'
 
   '@oxc-project/types@0.127.0':
     resolution: {integrity: sha512-aIYXQBo4lCbO4z0R3FHeucQHpF46l2LbMdxRvqvuRuW2OxdnSkcng5B8+K12spgLDj93rtN3+J2Vac/TIO+ciQ==}
@@ -814,6 +808,12 @@ packages:
     peerDependenciesMeta:
       '@stackra/ts-container':
         optional: true
+
+  '@stackra/typescript-config@1.0.5':
+    resolution: {integrity: sha512-VfUBCgNd49R6LThXGA0gOykUlTkSG7SJjRyKbQLeNIuSoTI0LBEpLI13MOBtBml6KhVulgBtNq0sO/s2SsLFpQ==}
+    engines: {node: '>=20', pnpm: '>=9.0.0'}
+    peerDependencies:
+      typescript: '>=5.0.0'
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -2455,10 +2455,10 @@ snapshots:
       '@tybys/wasm-util': 0.10.1
     optional: true
 
-  '@stackra/eslint-config@1.0.5(@babel/core@7.29.0)(eslint@9.28.0(jiti@2.6.1))(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))(typescript@6.0.3)':
+  '@nesvel/eslint-config@1.0.5(@babel/core@7.29.0)(eslint@9.28.0(jiti@2.6.1))(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))(typescript@6.0.3)':
     dependencies:
       '@babel/preset-typescript': 7.28.5(@babel/core@7.29.0)
-      '@stackra/tsup-config': 1.0.3(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))
+      '@nesvel/tsup-config': 1.0.3(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))
       eslint: 9.28.0(jiti@2.6.1)
       typescript: 6.0.3
     transitivePeerDependencies:
@@ -2466,20 +2466,16 @@ snapshots:
       - supports-color
       - tsup
 
-  '@stackra/prettier-config@1.0.3(prettier@3.8.3)(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))':
+  '@nesvel/prettier-config@1.0.3(prettier@3.8.3)(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))':
     dependencies:
-      '@stackra/tsup-config': 1.0.3(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))
+      '@nesvel/tsup-config': 1.0.3(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))
       prettier: 3.8.3
     transitivePeerDependencies:
       - tsup
 
-  '@stackra/tsup-config@1.0.3(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))':
+  '@nesvel/tsup-config@1.0.3(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3))':
     dependencies:
       tsup: 8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3)
-
-  '@stackra/typescript-config@1.0.4(typescript@6.0.3)':
-    dependencies:
-      typescript: 6.0.3
 
   '@oxc-project/types@0.127.0': {}
 
@@ -2623,6 +2619,10 @@ snapshots:
       collect.js: 4.36.1
     optionalDependencies:
       '@stackra/ts-container': 2.0.10(react@19.2.5)
+
+  '@stackra/typescript-config@1.0.5(typescript@6.0.3)':
+    dependencies:
+      typescript: 6.0.3
 
   '@standard-schema/spec@1.1.0': {}
 

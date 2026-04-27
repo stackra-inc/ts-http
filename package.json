@@ -1,6 +1,6 @@
 {
   "name": "@stackra/ts-http",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Middleware-driven HTTP client for TypeScript — axios underneath, decorator-based middleware registration, and DI integration via @stackra/ts-container.",
   "license": "MIT",
   "author": {
@@ -10,13 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stackra-inc/frontend-monorepo.git",
-    "directory": "packages/http"
+    "url": "https://github.com/stackra-inc/ts-http.git"
   },
   "bugs": {
-    "url": "https://github.com/stackra-inc/frontend-monorepo/issues"
+    "url": "https://github.com/stackra-inc/ts-http/issues"
   },
-  "homepage": "https://github.com/stackra-inc/frontend-monorepo#readme",
+  "homepage": "https://github.com/stackra-inc/ts-http#readme",
   "keywords": [
     "http",
     "http-client",
@@ -93,10 +92,10 @@
     }
   },
   "devDependencies": {
-    "@stackra/eslint-config": "^1.0.5",
-    "@stackra/prettier-config": "^1.0.3",
-    "@stackra/tsup-config": "^1.0.3",
-    "@stackra/typescript-config": "^1.0.4",
+    "@nesvel/eslint-config": "^1.0.5",
+    "@nesvel/prettier-config": "^1.0.3",
+    "@nesvel/tsup-config": "^1.0.3",
+    "@stackra/typescript-config": "^1.0.5",
     "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "@vitest/coverage-v8": "^4.1.5",
@@ -104,7 +103,7 @@
     "eslint": "9.28.0",
     "eslint-plugin-turbo": "^2.9.6",
     "jiti": "^2.6.1",
-    "jsdom": "^29.0.2",
+    "jsdom": "^29.1.0",
     "prettier": "^3.8.3",
     "tsup": "^8.5.1",
     "typescript": "^6.0.3",
@@ -120,5 +119,5 @@
     "pnpm": ">=9.0.0"
   },
   "sideEffects": false,
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@10.33.2"
 }

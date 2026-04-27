@@ -6,6 +6,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 0.1.1
+
+### Fixed
+
+- Add `@vivtel/metadata` as direct dependency (was transitive only)
+- Add `jiti` and `eslint-plugin-turbo` for CI lint compatibility
+- Fix ESLint config with targeted rule overrides for HTTP interfaces/services
+- Add `.prettierignore` for lockfiles and generated files
+- Fix repository URLs in package.json (was pointing to frontend-monorepo)
+
+### Added
+
+- CHANGELOG.md with release notes
+- `.gitignore` for proper git tracking
+- Banner PNG for Slack notifications
+
 ## 0.1.0
 
 ### Added
