@@ -21,7 +21,8 @@
 
 ## Linting & Formatting
 
-- **ESLint**: typescript-eslint flat config
+- **ESLint**: 9.x (pinned — `@nesvel/eslint-config` requires ESLint 9, not 10)
+- **ESLint config**: `@nesvel/eslint-config` with typescript-eslint flat config
 - **Prettier**: extends `@nesvel/prettier-config`
 
 ## Path Aliases
