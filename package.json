@@ -64,7 +64,8 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "prepublishOnly": "pnpm run build",
-    "release": "pnpm publish --access public --no-git-checks"
+    "release": "pnpm publish --access public --no-git-checks",
+    "prepare": "husky"
   },
   "dependencies": {
     "@vivtel/metadata": "^1.0.5",
@@ -92,18 +93,23 @@
     }
   },
   "devDependencies": {
-    "@stackra/eslint-config": "^1.0.6",
-    "@stackra/prettier-config": "^1.0.4",
-    "@stackra/tsup-config": "^1.0.4",
-    "@stackra/typescript-config": "^1.0.5",
+    "@commitlint/cli": "^20.5.2",
+    "@commitlint/config-conventional": "^20.5.0",
+    "@commitlint/types": "^20.5.0",
+    "@stackra/eslint-config": "^1.0.7",
+    "@stackra/prettier-config": "^1.0.5",
+    "@stackra/tsup-config": "^1.0.6",
+    "@stackra/typescript-config": "^1.0.9",
     "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "@vitest/coverage-v8": "^4.1.5",
     "@vitest/ui": "^4.1.5",
-    "eslint": "9.28.0",
+    "eslint": "^9.28.0",
     "eslint-plugin-turbo": "^2.9.6",
+    "husky": "^9.1.7",
     "jiti": "^2.6.1",
     "jsdom": "^29.1.0",
+    "lint-staged": "^16.4.0",
     "prettier": "^3.8.3",
     "tsup": "^8.5.1",
     "typescript": "^6.0.3",
@@ -115,9 +121,15 @@
     "registry": "https://registry.npmjs.org/"
   },
   "engines": {
-    "node": ">=18.0.0",
+    "node": ">=22",
     "pnpm": ">=9.0.0"
   },
   "sideEffects": false,
-  "packageManager": "pnpm@10.33.2"
+  "packageManager": "pnpm@10.33.2",
+  "pnpm": {
+    "overrides": {
+      "eslint": "^9.28.0",
+      "vite": "^7.2.6"
+    }
+  }
 }
