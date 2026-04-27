@@ -1,7 +1,7 @@
 /**
  * @fileoverview ESLint configuration for @stackra/ts-http package
  *
- * This configuration extends the shared @nesvel/eslint-config with
+ * This configuration extends the shared @stackra/eslint-config with
  * project-specific ignore patterns. Uses the ESLint flat config format.
  *
  * Configuration Features:
@@ -18,12 +18,12 @@
 // Import the Linter type for type-safe configuration
 import type { Linter } from 'eslint';
 
-// Import the shared Vite-optimized ESLint configuration from @nesvel/eslint-config.
+// Import the shared Vite-optimized ESLint configuration from @stackra/eslint-config.
 // This includes TypeScript, import ordering, and style rules.
-import { viteConfig } from '@nesvel/eslint-config';
+import { viteConfig } from '@stackra/eslint-config';
 
 const config: Linter.Config[] = [
-  // Spread the shared Nesvel ESLint configuration.
+  // Spread the shared Stackra ESLint configuration.
   // Includes TypeScript, import, and style rules.
   ...viteConfig,
 
@@ -36,10 +36,37 @@ const config: Linter.Config[] = [
     ignores: ['dist/**', 'node_modules/**', '*.config.js', '*.config.ts'],
   },
 
-  // Add package-specific rule overrides here.
-  // These take precedence over the shared config.
+  // Allow `any` in interfaces and type definitions — HTTP generics require flexibility.
   {
-    rules: {},
+    files: ['src/interfaces/**/*.ts', 'src/types/**/*.ts'],
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+    },
+  },
+
+  // Allow `any` in HTTP services and middleware — Axios responses are inherently untyped.
+  // Allow console in logging middleware — it's the whole point of the middleware.
+  {
+    files: ['src/services/**/*.ts', 'src/middleware/**/*.ts'],
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+      'no-console': 'off',
+    },
+  },
+
+  // Allow `any` in test setup files.
+  {
+    files: ['__tests__/**/*.ts'],
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+    },
+  },
+
+  // Disable turbo env var rule — this is a standalone package, not a monorepo.
+  {
+    rules: {
+      'turbo/no-undeclared-env-vars': 'off',
+    },
   },
 ];
 
