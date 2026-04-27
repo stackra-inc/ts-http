@@ -1,7 +1,7 @@
 /**
  * @fileoverview Prettier configuration for @stackra/ts-http package
  *
- * Extends the shared @nesvel/prettier-config for consistent code formatting
+ * Extends the shared @stackra/prettier-config for consistent code formatting
  * across all packages in the monorepo.
  *
  * Shared Config Provides:
@@ -21,6 +21,6 @@
 // All formatting rules are defined in the shared config —
 // no package-specific overrides needed.
 /** @type {string} */
-const config = '@nesvel/prettier-config';
+const config = '@stackra/prettier-config';
 
 export default config;

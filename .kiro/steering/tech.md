@@ -9,7 +9,7 @@
 
 ## Build
 
-- **Bundler**: tsup (via `@nesvel/tsup-config`)
+- **Bundler**: tsup (via `@stackra/tsup-config`)
 - **Output**: ESM (`.js`) + CJS (`.cjs`) + `.d.ts` declarations
 - **Package manager**: pnpm 10.x
 
@@ -21,9 +21,9 @@
 
 ## Linting & Formatting
 
-- **ESLint**: 9.x (pinned — `@nesvel/eslint-config` requires ESLint 9, not 10)
-- **ESLint config**: `@nesvel/eslint-config` with typescript-eslint flat config
-- **Prettier**: extends `@nesvel/prettier-config`
+- **ESLint**: 9.x (pinned — `@stackra/eslint-config` requires ESLint 9, not 10)
+- **ESLint config**: `@stackra/eslint-config` with typescript-eslint flat config
+- **Prettier**: extends `@stackra/prettier-config`
 
 ## Path Aliases
 

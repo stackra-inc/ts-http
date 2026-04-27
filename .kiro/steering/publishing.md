@@ -141,8 +141,8 @@ Release notes.
 
 ### ESLint Version
 
-`@nesvel/eslint-config@1.0.5` bundles `@typescript-eslint@8.48.1` built against
-ESLint 9. **All packages using `@nesvel/eslint-config` must pin ESLint to 9.x**
+`@stackra/eslint-config@1.0.5` bundles `@typescript-eslint@8.48.1` built against
+ESLint 9. **All packages using `@stackra/eslint-config` must pin ESLint to 9.x**
 (`"eslint": "9.28.0"`).
 
 ESLint 10 causes:
@@ -166,6 +166,6 @@ A Kiro hook (`svg-to-png.kiro.hook`) automates this on SVG file save.
 | Package                      | Repo                            | Purpose                                    |
 | ---------------------------- | ------------------------------- | ------------------------------------------ |
 | `@stackra/typescript-config` | `stackra-inc/typescript-config` | tsconfig presets                           |
-| `@nesvel/tsup-config`        | —                               | tsup build presets (migrating to @stackra) |
-| `@nesvel/eslint-config`      | —                               | ESLint flat config (migrating to @stackra) |
-| `@nesvel/prettier-config`    | —                               | Prettier config (migrating to @stackra)    |
+| `@stackra/tsup-config`       | —                               | tsup build presets (migrating to @stackra) |
+| `@stackra/eslint-config`     | —                               | ESLint flat config (migrating to @stackra) |
+| `@stackra/prettier-config`   | —                               | Prettier config (migrating to @stackra)    |
