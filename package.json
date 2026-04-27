@@ -1,6 +1,6 @@
 {
   "name": "@stackra/ts-http",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Middleware-driven HTTP client for TypeScript — axios underneath, decorator-based middleware registration, and DI integration via @stackra/ts-container.",
   "license": "MIT",
   "author": {
